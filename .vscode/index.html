@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antoni Debicki | Website for CSC 225</title>
+    <title>Antoni Debicki | Website for my CSC 225 class</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,13 +11,14 @@
       <div class="brand-wrap">
         <p class="eyebrow">Welcome to My Website</p>
         <h1 id="main-title">Antoni Debicki</h1>
+      </div>
     </header>
 
     <main class="container">
       <section class="hero panel">
         <div>
           <p class="eyebrow">Welcome</p>
-          <h2>Finding out how the world works, lol.</h2>
+          <h2>Finding out what MAKES the World Tick.</h2>
         </div>
         <p>
           Hi, I'm <strong>Antoni Debicki</strong>. I am an eighteen year old at the College of Staten Island interested in computer science, website development, full-stack development, amateur, indie game development, and the development of neural networks.
@@ -31,14 +32,13 @@
       <section id="about" class="panel">
         <h3>About Me</h3>
         <p>
-          I enjoy learning the fundamentals of programming and web development. I like taking
-          problems apart, figuring out solutions step by step, and making small projects that
-          are useful and easy to understand.
+          I was born on November 6th, 2007 on Staten Island, so I've basically been here my entire life. I find it incredibly easy to take apart things and figure out how they work in the file, and that is especially good for my interest in computer science. I am also into postmodernist-adjacent literature by Jean Baudrillard, Gilles Deleuze, and Felix Guattari, and I read many books based off of cybernetic economics, like Stafford Beer's "Brain of the Firm" (1972), and Paul Cockshott's breakout Cybernetics book, "Towards a New Socialism" (1994).
         </p>
         <ul class="info-list">
-          <li>Interested in software design and logic</li>
-          <li>Loves experimenting with code and web interfaces</li>
-          <li>Works well in a structured, problem-solving environment</li>
+          <li>I am Interested in software logic, software design, user-based interfaces and how to generally mess with a computer</li>
+          <li>I love ergodic fiction, especially the kind where you have to work towards a goal. I spend most of my time reading and writing</li>
+          <li>I am a huge fan of ballsy writers like Mark Z. Danielewski, the brain behind the House of Leaves. Baudrillard and Deleuze counting as a part of that Ballsy writers list.</li>
+          <li>I work best in an environment where I don't work with others, mainly on my own, because I feel I learn the best that way.</li>
         </ul>
       </section>
 
@@ -46,31 +46,50 @@
         <article class="panel">
           <h3>Current Focus</h3>
           <ul class="info-list">
-            <li>CSC 225</li>
-            <li>JavaScript and HTML/CSS</li>
-            <li>Algorithms and problem solving</li>
+            <li>CSC 225/220/211 - Assembly, C, C++, JavaScript, HTML/CSS, REACT.</li>
+            <li>PSY 100 - Psychology class.</li>
+            <li>Doing private research on mind-body communication, how we react with our environment.</li>
+            <li>An extensive 150,000 word personal writing project.</li>
           </ul>
         </article>
 
         <article id="projects" class="panel">
           <h3>Interests</h3>
           <ul class="info-list">
-            <li>Web development</li>
-            <li>Computer science fundamentals</li>
-            <li>Creative digital projects</li>
+            <li>Computer Science / Web Development</li>
+            <li>Creative Writing Projects based on Jungian / Freudian / Nietzschean / Landian Psychology.</li>
+            <li>Understanding communication of the Body-to-Environment-type</li>
           </ul>
         </article>
       </section>
 
-      <section id="contact" class="panel">
-        <h3>Contact</h3>
-        <p>Email: noobbrom@example.com</p>
-        <p>Location: Somewhere learning and building</p>
+      <section class="lower-grid">
+        <section id="contact" class="panel">
+          <h3>Contact</h3>
+          <p>First Email: Antonidebicki@gmail.com</p>
+          <p>Second Email: Antonidebick@gmail.com</p>
+          <p>Location: University of Staten Island</p>
+        </section>
+
+        <aside class="panel poll-panel" aria-label="Programming language poll">
+          <h3>Quick Poll</h3>
+          <p>What is the coolest type of programming language mentioned on this page?</p>
+
+          <form class="poll-form">
+            <label><input type="radio" name="language" value="Low-level languages" /> Low-level languages</label>
+            <label><input type="radio" name="language" value="Web languages" /> Web languages</label>
+            <label><input type="radio" name="language" value="Assembly" /> Assembly</label>
+            <label><input type="radio" name="language" value="Neural network / AI languages" /> Neural network / AI languages</label>
+            <button type="button" class="poll-btn">Vote</button>
+          </form>
+
+          <p class="poll-result" aria-live="polite">No vote yet.</p>
+        </aside>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Noobbrom</p>
+      <p>© 2026 Noobbrom</p>
     </footer>
 
     <script src="script.js"></script>

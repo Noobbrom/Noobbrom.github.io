@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const pollButton = document.querySelector('.poll-btn');
+  const pollResult = document.querySelector('.poll-result');
+  const pollOptions = document.querySelectorAll('input[name="language"]');
+
+  if (pollButton && pollResult) {
+    pollButton.addEventListener('click', () => {
+      const selected = [...pollOptions].find(option => option.checked);
+
+      if (selected) {
+        pollResult.textContent = `You voted for: ${selected.value}`;
+      } else {
+        pollResult.textContent = 'Please select an option before voting.';
+      }
+    });
+  }
 
   console.log('Website loaded successfully.');
 });
