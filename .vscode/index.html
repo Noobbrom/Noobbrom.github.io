@@ -85,6 +85,49 @@
 
           <p class="poll-result" aria-live="polite">No vote yet.</p>
         </aside>
+
+        <section class="panel login-panel">
+          <h3>Login</h3>
+          <form id="login-form" class="login-form">
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="firstName" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="lastName" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" required />
+            </div>
+
+            <div class="form-row">
+              <label for="dob">Date of Birth</label>
+              <input id="dob" name="dob" type="date" required />
+            </div>
+
+            <button type="submit" class="login-btn">Submit</button>
+          </form>
+
+          <div id="login-success" class="login-success" hidden>
+            <h4>Login successful</h4>
+            <ul>
+              <li><strong>First Name:</strong> <span id="output-first-name"></span></li>
+              <li><strong>Last Name:</strong> <span id="output-last-name"></span></li>
+              <li><strong>Email Address:</strong> <span id="output-email"></span></li>
+              <li><strong>Password:</strong> <span id="output-password"></span></li>
+              <li><strong>Date of Birth:</strong> <span id="output-dob"></span></li>
+            </ul>
+          </div>
+        </section>
       </section>
     </main>
 

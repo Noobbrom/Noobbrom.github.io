@@ -15,6 +15,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const loginForm = document.getElementById('login-form');
+  const loginSuccess = document.getElementById('login-success');
+
+  if (loginForm && loginSuccess) {
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value.trim();
+      const lastName = document.getElementById('last-name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const dob = document.getElementById('dob').value;
+
+      const maskedPassword = '*'.repeat(password.length || 8);
+
+      document.getElementById('output-first-name').textContent = firstName;
+      document.getElementById('output-last-name').textContent = lastName;
+      document.getElementById('output-email').textContent = email;
+      document.getElementById('output-password').textContent = maskedPassword;
+      document.getElementById('output-dob').textContent = dob;
+
+      loginSuccess.hidden = false;
+      loginForm.reset();
+    });
+  }
+
   console.log('Website loaded successfully.');
 });
 

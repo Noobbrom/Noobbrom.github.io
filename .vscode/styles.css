@@ -89,7 +89,8 @@ h1.highlight {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
   color: var(--text);
 }
@@ -133,7 +134,8 @@ label {
 
 .cta-row a,
 #theme-toggle,
-.poll-btn {
+.poll-btn,
+.login-btn {
   display: inline-block;
   padding: 10px 16px;
   text-decoration: none;
@@ -147,7 +149,8 @@ label {
 
 .cta-row a:hover,
 #theme-toggle:hover,
-.poll-btn:hover {
+.poll-btn:hover,
+.login-btn:hover {
   background: var(--accent);
   color: #081017;
 }
@@ -195,6 +198,49 @@ label {
   margin: 0;
   font-weight: 700;
   color: var(--accent-strong);
+}
+
+.login-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.login-form {
+  display: grid;
+  gap: 14px;
+}
+
+.form-row {
+  display: grid;
+  gap: 6px;
+}
+
+.form-row label {
+  font-weight: 700;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+}
+
+.login-success {
+  margin-top: 8px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  background: rgba(91, 174, 184, 0.08);
+}
+
+.login-success ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.login-success li {
+  margin-bottom: 8px;
 }
 
 footer {
