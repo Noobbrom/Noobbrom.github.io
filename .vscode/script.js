@@ -1,25 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const heading = document.querySelector('#main-title');
-  const themeToggle = document.querySelector('#theme-toggle');
-  const yearText = document.querySelector('#year');
 
-  if (yearText) {
-    yearText.textContent = new Date().getFullYear();
-  }
-
-  if (heading) {
-    heading.addEventListener('click', () => {
-      heading.classList.toggle('highlight');
-    });
-  }
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-theme');
-    });
-  }
-
-  console.log('Noobbrom website loaded successfully.');
+  console.log('Website loaded successfully.');
 });
 
 /*
